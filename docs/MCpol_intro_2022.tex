@@ -1,0 +1,98 @@
+\documentclass[12pt]{amsart}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath, amsthm}
+\usepackage{epstopdf}
+\usepackage{array}
+\usepackage{url}
+\usepackage{color}
+
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcommand{\todo}[1]{{\color{red}$\blacksquare$~\textsf{[TODO: #1]}}}
+
+\begin{document}
+
+\noindent
+\begin{tabular}{L{9.7cm} R{6.7cm}}
+Astrophysical Radiation Processes: AS7005& Lab: 26.09.2022 \\
+Evan O'Connor \& Yutong He & Due: 31.10.2022; on Athena\\
+\end{tabular}\\
+
+\vspace*{0.5cm}
+
+\centerline{\Large \underline{Introduction to AS7005 Laboratory Exercise} }
+\vspace*{0.5cm}
+
+The purpose of this laboratory exercise is to solidify your
+understanding of of the fundamental radiation theory concept of
+polarization, introduce you to some basic tools for radiation
+transport, and get practice performing research, analysing results,
+and writing scientifically.  These cover some of the learning outcomes
+of the course, but also some of the learning outcomes of the Master's
+program in general and is good preperation for the research project
+later on in the degree program.  \newline
+
+There is a prelab exercise (one of the standard weekly exercises) to
+prep you for the content we will be looking at in the lab.  The lab
+itself will be two parts.  The first will guide you through the
+concepts of Thomson scattering, angular distributions, polarization,
+and net polarization. Then proceed to have you perform Monto Carlo
+simulations of radiation from aspherical supernovae in order to
+determine the net polarization of the signal.  This will be the major
+work in the lab session. The second part will be writing a paper-like
+lab report to summarize the findings. Even though this research has
+been done before (we'll see this below), when writing the report,
+please work under the assumption you are doing this for the first
+time, typical for a scientific paper.  Please read
+\mbox{\url{https://www.nature.com/articles/d41586-019-02918-5}} for
+tips on writing scientifically.  \newline
+
+For the paper please follow the outline below and pay attention to the
+questions posed in the lab.  We suggest using overleaf
+(\url{www.overleaf.com}), choose a new project with a template, choose
+either ``Astronomy and Astrophysics'' or ``American Astronomical
+Society''. Include an {\bf{Abstract}} summarizing the paper and the
+findings.  An {\bf{Introduction}} where you give an general overview
+of the astrophysical system we are modelling, and any other background
+information needed for the paper. Include a summary of the layout of
+the paper. Have a {\bf{Methods}} section where you discuss briefly the
+theoretical model and methods (including a brief description of the
+Monto Carlo transport).  Include key equations (e.g., among others,
+the differential Thomson Scattering cross section, $d\sigma/d\Omega$)
+and ket derivations. Have a {\bf{Results}} section where you go through and
+present the verification of the Monte Carlo simulations and the
+results of the net polarization study. Please pay attention to the
+specific questions asked in the lab and ensure you provide an answer
+to them. End with a {\bf{Conclusions}} section where you discuss and
+summarize the results. Wrap things up with assessing what you think
+are the main limitations of the methods (including sources of error)
+and possible improvements.
+\newline
+
+The lab write up is intended to be done independently. But you are
+encouraged to have dicussions with each other and the lab instructors
+during the lab itself, but please come to your own conclusions,
+present your own data in your own plots, answer the questions on your
+own, and submit your own paper. An A will be given for a well written
+paper that follows the above outline and shows a excellent
+understanding of the methods and results, perhaps with some extension,
+analysis, or insight beyond what what is presented in the lab
+notebook. An acceptable lab report is required to complete the course.
+The lab componant (the paper and the prelab exercise) is 15\% of the
+total grade in the course. Please also save the notebook and include
+in your submission a pdf copy of the jupyter notebook you generated in
+the lab.  This will be especially useful when you write up the lab,
+but also helps us with seeing your methods.
+
+\end{document}

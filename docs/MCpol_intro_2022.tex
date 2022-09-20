@@ -35,26 +35,27 @@ Evan O'Connor \& Yutong He & Due: 31.10.2022; on Athena\\
 \vspace*{0.5cm}
 
 The purpose of this laboratory exercise is to solidify your
-understanding of of the fundamental radiation theory concept of
+understanding of the fundamental radiation theory concept of
 polarization, introduce you to some basic tools for radiation
 transport, and get practice performing research, analysing results,
 and writing scientifically.  These cover some of the learning outcomes
 of the course, but also some of the learning outcomes of the Master's
-program in general and is good preperation for the research project
+program in general and is good preparation for the research project
 later on in the degree program.  \newline
 
 There is a prelab exercise (one of the standard weekly exercises) to
 prep you for the content we will be looking at in the lab.  The lab
 itself will be two parts.  The first will guide you through the
 concepts of Thomson scattering, angular distributions, polarization,
-and net polarization. Then proceed to have you perform Monto Carlo
-simulations of radiation from aspherical supernovae in order to
-determine the net polarization of the signal.  This will be the major
-work in the lab session. The second part will be writing a paper-like
-lab report to summarize the findings. Even though this research has
-been done before (we'll see this below), when writing the report,
-please work under the assumption you are doing this for the first
-time, typical for a scientific paper.  Please read
+Stokes parameters, and net polarization. Following this, the lab has
+you perform Monto Carlo simulations of radiation transport with
+photons from an aspherical supernovae in order to determine the net
+polarization of the signal.  This will be the major work in the lab
+session. The second part will be writing a paper-like lab report to
+summarize the findings. Even though this research has been done before
+(we'll see this below), when writing the report, please work under the
+assumption you are doing this for the first time, typical for a
+scientific paper. You can refer to the paper for the methods.  Please read
 \mbox{\url{https://www.nature.com/articles/d41586-019-02918-5}} for
 tips on writing scientifically.  \newline
 
@@ -70,7 +71,7 @@ the paper. Have a {\bf{Methods}} section where you discuss briefly the
 theoretical model and methods (including a brief description of the
 Monto Carlo transport).  Include key equations (e.g., among others,
 the differential Thomson Scattering cross section, $d\sigma/d\Omega$)
-and ket derivations. Have a {\bf{Results}} section where you go through and
+and key derivations. Have a {\bf{Results}} section where you go through and
 present the verification of the Monte Carlo simulations and the
 results of the net polarization study. Please pay attention to the
 specific questions asked in the lab and ensure you provide an answer
@@ -81,18 +82,52 @@ and possible improvements.
 \newline
 
 The lab write up is intended to be done independently. But you are
-encouraged to have dicussions with each other and the lab instructors
+encouraged to have discussions with each other and the lab instructors
 during the lab itself, but please come to your own conclusions,
 present your own data in your own plots, answer the questions on your
 own, and submit your own paper. An A will be given for a well written
-paper that follows the above outline and shows a excellent
-understanding of the methods and results, perhaps with some extension,
-analysis, or insight beyond what what is presented in the lab
-notebook. An acceptable lab report is required to complete the course.
-The lab componant (the paper and the prelab exercise) is 15\% of the
-total grade in the course. Please also save the notebook and include
-in your submission a pdf copy of the jupyter notebook you generated in
-the lab.  This will be especially useful when you write up the lab,
-but also helps us with seeing your methods.
+paper that follows the above outline, shows an excellent understanding
+of the methods and results, and uses the tools of the lab to go
+further in the analysis or to provide insight beyond what what is
+presented in the lab notebook. An acceptable lab report is required to
+complete the course.  The lab component (the paper and the prelab
+exercise) is 15\% of the total grade in the course. Please also save
+the notebook and include in your submission a pdf copy of the jupyter
+notebook you generated in the lab.  This will be especially useful
+when you write up the lab, but also helps us with seeing your methods.
+
+\newpage
+
+{\Large{Background for the lab}}\\
+
+Please read H\"oflich ``Asphericity effects in scattering dominated
+photosphere'' A\&A 246 481 (1991).  The important parts are the
+methods (Section 2) and results (Section 3), but not so much the
+application to SN1987A (Section 4).  The purpose of the lab and topic
+of your paper is reproduce a selection of the results in this paper.
+Some methods and physical setups we use are different from H\"oflich
+(1991), this is mainly for ease of implementation.  You are more than
+welcome to enhance this work to includes these missing aspects, and
+please discuss with us your thoughts and we can aide in your
+endeavour and make sure you doesn't forget any key aspects.
+
+As we saw in the the prelab exercise, Thomson scattering
+dominated atmospheres polarize the light coming from different
+regions.  If the atmosphere is asymmetric than this can lead to an
+asymmetry polarization signal, and ultimately a net polarization from
+the source as a whole.  In this lab, we will construct such asymmetric
+atmospheres and follow the trajectory of individual photons being
+emitted from the origin.  Since the scattering will be due to Thomson
+scattering, the polarization state of the photons depends on the
+history of the photon.  If we simulate enough photons we can determine
+the polarization pattern and the net polarization.
+
+The notebooks associated with this lab guide you through this whole
+process.  Several key steps are missing, which will focus your
+attention on the concepts relevant for this lab.  Please go through
+the notebook slowly, read all the headers and comments and understand
+what is happening. 
+
+
 
 \end{document}
